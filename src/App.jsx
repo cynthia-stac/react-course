@@ -27,3 +27,12 @@ export function Counter() {
   );
 }
 
+export function Car() {
+  return (
+    <>
+      <h2>My Car</h2>
+      <p>It is a Ford Mustang.</p>
+    </>
+  );
+}
+
