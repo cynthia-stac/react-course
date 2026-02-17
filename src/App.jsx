@@ -35,6 +35,7 @@ export function Car() {
     <div>
       <h2>My Car</h2>
       <p>It is a {brand} {model}.</p>
+      <p>This car has {218 * 1.36} horsepower!</p>
     </div>
   );
 }
