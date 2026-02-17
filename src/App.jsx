@@ -6,6 +6,7 @@ export default function App() {
       <h1>Welcome from React</h1>
       <Counter />  
       <MyButton />  
+      <Car />
     </div>
   );
 }
@@ -29,10 +30,10 @@ export function Counter() {
 
 export function Car() {
   return (
-    <>
+    <div>
       <h2>My Car</h2>
       <p>It is a Ford Mustang.</p>
-    </>
+    </div>
   );
 }
 
