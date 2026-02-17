@@ -29,10 +29,12 @@ export function Counter() {
 }
 
 export function Car() {
+  const brand = "Ford"
+  const model = "Mustang"
   return (
     <div>
       <h2>My Car</h2>
-      <p>It is a Ford Mustang.</p>
+      <p>It is a {brand} {model}.</p>
     </div>
   );
 }
