@@ -13,7 +13,7 @@ export default function App() {
 
 export function MyButton() {
   const myFunc = () => {
-    <p>HEYYYYYYY</p>
+    alert('HEYYYYYYYYYYY!!!!!!!!!!!')
   }
   return (
     <button onClick={myFunc}>I'm a button</button>
