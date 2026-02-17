@@ -12,8 +12,11 @@ export default function App() {
 }
 
 export function MyButton() {
+  const myFunc = () => {
+    <p>HEYYYYYYY</p>
+  }
   return (
-    <button>I'm a button</button>
+    <button onClick={myFunc}>I'm a button</button>
   );
 }
 
