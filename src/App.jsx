@@ -34,12 +34,18 @@ export function Car() {
   function kwToHp(kw){
     return kw * 1.36
   }
+  const myobj = {
+    name: "MHero",
+    model: "500",
+    color: "Dark Silver"
+  };
   return (
     <div>
-      <h2>My Car</h2>
+      <h2 className="myClass">My Car</h2>
       <p>It is a {brand} {model}.</p>
       <p>This car has {218 * 1.36} horsepower!</p>
       <p>By function call it has {kwToHp(218)} horsepower!!!</p>
+      <p>My dream car shall is a {myobj.color}  {myobj.name} {myobj.model} ❤️ </p>
     </div>
   );
 }
