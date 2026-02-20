@@ -62,13 +62,10 @@ export function Car() {
 }
 
 export function Fruit(){
-  const x = 10
-  let y = 'Apple'
-  if(x < 10){
-    y = 'Banana'
-  }
+  const x = 1
+  
   return (
-    <h1>{y}</h1>
+    <h1>{(x) < 10 ? "Apple" : "Banana"}</h1>
   )
 }
 
