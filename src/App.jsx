@@ -62,7 +62,7 @@ export function Car() {
 }
 
 export function Fruit(){
-  const x = 5
+  const x = 10
   let y = 'Apple'
   if(x < 10){
     y = 'Banana'
