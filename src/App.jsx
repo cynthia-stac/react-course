@@ -7,6 +7,7 @@ export default function App() {
       <Counter />  
       <MyButton />  
       <Car />
+      <Fruit />
     </div>
   );
 }
@@ -45,8 +46,8 @@ export function Car() {
   const x = "para"
   const myStyles = {
     color: 'red',
-    fontSize: '20px',
-    backgroundColor: 'lightyellow'
+    fontSize: '50px',
+    backgroundColor: 'lightgray'
   }
   return (
     <div>
@@ -55,8 +56,19 @@ export function Car() {
       <p className={x}>It is a {brand} {model}.</p>
       <p>This car has {218 * 1.36} horsepower!</p>
       <p>By function call it has {kwToHp(218)} horsepower!!!</p>
-      <p>My dream car shall is a {myobj.color}  {myobj.name} {myobj.model} ❤️ </p>
+      <p>My dream car is a {myobj.color}  {myobj.name} {myobj.model} ❤️ </p>
     </div>
   );
+}
+
+export function Fruit(){
+  const x = 5
+  let y = 'Apple'
+  if(x < 10){
+    y = 'Banana'
+  }
+  return (
+    <h1>{y}</h1>
+  )
 }
 
