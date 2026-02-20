@@ -5,6 +5,7 @@ import App from './App.jsx'
 import {MyButton} from './App.jsx'
 import {Counter} from './App.jsx'
 import {Car} from './App.jsx'
+import {Fruit} from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
