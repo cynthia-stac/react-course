@@ -50,6 +50,7 @@ export function Car() {
   }
   return (
     <div>
+      <h1 style={myStyles} >Favorite Car</h1>
       <h2 className="myClass">My Car</h2>
       <p className={x}>It is a {brand} {model}.</p>
       <p>This car has {218 * 1.36} horsepower!</p>
