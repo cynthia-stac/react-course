@@ -43,7 +43,11 @@ export function Car() {
     color: "Dark Silver"
   };
   const x = "para"
-  
+  const myStyles = {
+    color: 'red',
+    fontSize: '20px',
+    backgroundColor: 'lightyellow'
+  }
   return (
     <div>
       <h2 className="myClass">My Car</h2>
