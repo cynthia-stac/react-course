@@ -8,6 +8,8 @@ export default function App() {
       <MyButton />  
       <Car />
       <Fruit />
+      <Fruit />
+      <Fruit />
     </div>
   );
 }
