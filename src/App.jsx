@@ -9,10 +9,13 @@ export default function App() {
       <Car />
       <Car size ="Tortoise" />
       <Car size = "Cow" />
-      <Car carinfo = {carInfo}/>
+      <Car carinfo = {carInfo} />
       <Fruit />
       <Fruit />
       <Fruit />
+      <Son />
+      <Daugther />
+      <Parent />
     </div>
   );
 }
@@ -66,7 +69,7 @@ export function Car(props) {
       <h2 className="myClass">My Car</h2>
       <p className={x}>It is a {brand} {model}.</p>
       <p>I am a car of a {props.size} size!</p>
-      <h2>My {props.carinfo.name} {props.carinfo.model}</h2>
+      <h2>My {props.carinfo.name} {props.carinfo.model}!</h2>
       <h3>It is {props.carinfo.color} and it comes from the year {props.carinfo.year}</h3>
       <p>This car has {218 * 1.36} horsepower!</p>
       <p>By function call it has {kwToHp(218)} horsepower!!!</p>
@@ -81,5 +84,29 @@ export function Fruit(){
   return (
     <h1>{(x) < 10 ? "Apple" : "Banana"}</h1>
   )
+}
+
+
+export function Son(props) {
+  return (
+    <div style={{background: 'lightgreen'}}><h2>Son</h2><div>{props.children}</div></div>
+  );
+}
+
+export function Daughter(props) {
+  const {brand, model} = props;
+  return (
+    <div style={{background: 'lightblue'}}><h2>Daughter</h2><div>{props.children}</div></div>
+  );
+}
+
+export function Parent() {
+  return (
+    <div><h1>My two Children</h1><Son><p>
+          This was written in the Parent component,
+          but displayed as a part of the Son component</p></Son><Daughter><p>
+          This was written in the Parent component,
+          but displayed as a part of the Daughter component</p></Daughter></div>
+  );
 }
 
