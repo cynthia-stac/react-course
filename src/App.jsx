@@ -1,6 +1,14 @@
 import { useState } from "react";
 
 export default function App() {
+
+   const carInfo = {
+    name : "Ford",
+    model : "Mustang",
+    color : "Red",
+    year : 1969
+  }
+
   return (
     <div>
       <h1>Welcome from React</h1>
@@ -9,12 +17,10 @@ export default function App() {
       <Car />
       <Car size ="Tortoise" />
       <Car size = "Cow" />
-      <Car carinfo = {carInfo} />
-      <Fruit />
-      <Fruit />
+      <Car carinfo={carInfo} />
       <Fruit />
       <Son />
-      <Daugther />
+      <Daughter />
       <Parent />
     </div>
   );
@@ -57,20 +63,15 @@ export function Car(props) {
     fontSize: '50px',
     backgroundColor: 'lightgray'
   }
-  const carInfo = {
-    name : "Ford",
-    model : "Mustang",
-    color : "Red",
-    year : 1969
-  }
+ 
   return (
     <div>
       <h1 style={myStyles} >Favorite Car</h1>
       <h2 className="myClass">My Car</h2>
       <p className={x}>It is a {brand} {model}.</p>
       <p>I am a car of a {props.size} size!</p>
-      <h2>My {props.carinfo.name} {props.carinfo.model}!</h2>
-      <h3>It is {props.carinfo.color} and it comes from the year {props.carinfo.year}</h3>
+      <p>My {props.carinfo?.name} {props.carinfo?.model}!</p>
+      <p>It is {props.carinfo?.color} and it comes from the year {props.carinfo?.year}</p>
       <p>This car has {218 * 1.36} horsepower!</p>
       <p>By function call it has {kwToHp(218)} horsepower!!!</p>
       <p>My dream car is a {myobj.color}  {myobj.name} {myobj.model} ❤️ </p>
