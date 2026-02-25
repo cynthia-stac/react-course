@@ -46,35 +46,40 @@ export function Counter() {
   );
 }
 
-export function Car(props) {
-  const brand = "Ford"
-  const model = "Mustang"
-  function kwToHp(kw){
-    return kw * 1.36
+export function Car({ 
+  size = "Normal", 
+  carinfo = {} 
+}) {
+  const brand = "Ford";
+  const model = "Mustang";
+
+  function kwToHp(kw) {
+    return kw * 1.36;
   }
+
   const myobj = {
     name: "MHero",
     model: "500",
     color: "Dark Silver"
   };
-  const x = "para"
+
   const myStyles = {
-    color: 'red',
-    fontSize: '50px',
-    backgroundColor: 'lightgray'
-  }
- 
+    color: "red",
+    fontSize: "50px",
+    backgroundColor: "lightgray"
+  };
+
   return (
     <div>
-      <h1 style={myStyles} >Favorite Car</h1>
-      <h2 className="myClass">My Car</h2>
-      <p className={x}>It is a {brand} {model}.</p>
-      <p>I am a car of a {props.size} size!</p>
-      <p>My {props.carinfo?.name} {props.carinfo?.model}!</p>
-      <p>It is {props.carinfo?.color} and it comes from the year {props.carinfo?.year}</p>
+      <h1 style={myStyles}>Favorite Car</h1>
+      <h2>My Car</h2>
+      <p>It is a {brand} {model}.</p>
+      <p>I am a car of a {size} size!</p>
+      <p>My {carinfo.name} {carinfo.model}!</p>
+      <p>It is {carinfo.color} and it comes from the year {carinfo.year}</p>
       <p>This car has {218 * 1.36} horsepower!</p>
       <p>By function call it has {kwToHp(218)} horsepower!!!</p>
-      <p>My dream car is a {myobj.color}  {myobj.name} {myobj.model} ❤️ </p>
+      <p>My dream car is a {myobj.color} {myobj.name} {myobj.model} ❤️</p>
     </div>
   );
 }
@@ -90,14 +95,14 @@ export function Fruit(){
 
 export function Son(props) {
   return (
-    <div style={{background: 'lightgreen'}}><h2>Son</h2><div>{props.children}</div></div>
+    <div style={{background: 'lightblue'}}><h2>Son</h2><div>{props.children}</div></div>
   );
 }
 
 export function Daughter(props) {
   const {brand, model} = props;
   return (
-    <div style={{background: 'lightblue'}}><h2>Daughter</h2><div>{props.children}</div></div>
+    <div style={{background: 'pink'}}><h2>Daughter</h2><div>{props.children}</div></div>
   );
 }
 
