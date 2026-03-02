@@ -117,7 +117,10 @@ export function Parent() {
       </Son>
       <Daughter><p>
           This was written in the Parent component,
-          but displayed as a part of the Daughter component</p></Daughter></div>
+          but displayed as a part of the Daughter component
+          </p>
+      </Daughter>
+    </div>
   );
 }
 
