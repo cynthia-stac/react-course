@@ -108,9 +108,14 @@ export function Daughter(props) {
 
 export function Parent() {
   return (
-    <div><h1>My two Children</h1><Son><p>
+    <div>
+      <h1>My two Children</h1>
+      <Son><p>
           This was written in the Parent component,
-          but displayed as a part of the Son component</p></Son><Daughter><p>
+          but displayed as a part of the Son component
+          </p>
+      </Son>
+      <Daughter><p>
           This was written in the Parent component,
           but displayed as a part of the Daughter component</p></Daughter></div>
   );
