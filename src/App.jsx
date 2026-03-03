@@ -22,7 +22,7 @@ export default function App() {
       <Son />
       <Daughter />
       <Parent />
-      <Goal isGoal = {false}/>
+      <Goal isGoal = {true}/>
     </div>
   );
 }
