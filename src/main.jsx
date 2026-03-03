@@ -11,6 +11,7 @@ import { Daughter } from './App.jsx'
 import { Parent } from './App.jsx'
 import { MissedGoal } from './App.jsx'
 import { MadeGoal } from './App.jsx'
+import { Goal } from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
