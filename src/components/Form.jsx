@@ -4,6 +4,11 @@ import { createRoot } from "react-dom/client"
 
 export default function MyForm(){
     const [name, setName] = useState("")
+
+    function handleChange(e){
+        
+    }
+
     return (
         <form>
             <label> Enter your name:
