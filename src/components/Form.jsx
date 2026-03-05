@@ -9,6 +9,11 @@ export default function MyForm(){
         setName(e.target.value)
     }
 
+    function handleSubmit(e){
+        e.preventDefault()
+        alert(name)
+    }
+
     return (
         <form>
             <label> Enter your name:
