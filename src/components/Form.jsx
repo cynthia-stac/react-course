@@ -16,7 +16,7 @@ export default function MyForm(){
 
     const [myCar, setMyCar] = useState("Volvo");
 
-    const handleChange = (event) => {
+    const handleChanges = (event) => {
         setMyCar(event.target.value)
     }
 
@@ -32,7 +32,7 @@ export default function MyForm(){
             </label>
         </form>
         <form>
-            <select value={myCar} onChange={handleChange}>
+            <select value={myCar} onChange={handleChanges}>
                 <option value="Ford">Ford</option>
                 <option value="Volvo">Volvo</option>
                 <option value="Fiat">Fiat</option>
