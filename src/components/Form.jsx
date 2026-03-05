@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client"
 
 
 export default function MyForm(){
-    const [name, setName] = useState("")
+    const [name, setName] = useState("John Doe")
 
     function handleChange(e){
         setName(e.target.value)
