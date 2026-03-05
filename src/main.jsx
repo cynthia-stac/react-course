@@ -16,7 +16,8 @@ import MyForm from './components/Form.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    
     <App />
-    <MyForm />
+    
   </StrictMode>,
 )
