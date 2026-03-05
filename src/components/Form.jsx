@@ -14,8 +14,15 @@ export default function MyForm(){
         alert(name)
     }
 
+    const [myCar, setMyCar] = useState("Volvo");
+
+    const handleChange = (event) => {
+        setMyCar(event.target.value)
+    }
+
     return (
-        <form>
+        <>
+        <form onSubmit={handleSubmit}>
             <label> Enter your name:
                 <input type="text" value={name} onChange={handleChange}/>
             </label>
@@ -24,5 +31,13 @@ export default function MyForm(){
                 <input type="submit" />
             </label>
         </form>
+        <form>
+            <select value={myCar} onChange={handleChange}>
+                <option value="Ford">Ford</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Fiat">Fiat</option>
+            </select>
+        </form>
+        </>
     )
 }
