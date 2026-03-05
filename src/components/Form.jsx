@@ -7,7 +7,7 @@ export default function MyForm(){
     return (
         <form>
             <label> Enter your name:
-                <input type="text" />
+                <input type="text" value={name}/>
             </label>
         </form>
     )
