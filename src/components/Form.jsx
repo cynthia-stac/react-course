@@ -20,6 +20,9 @@ export default function MyForm(){
                 <input type="text" value={name} onChange={handleChange}/>
             </label>
             <p>Current Value:{name}</p>
+            <label>
+                <input type="submit" />
+            </label>
         </form>
     )
 }
