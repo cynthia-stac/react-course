@@ -9,6 +9,7 @@ export default function MyForm(){
             <label> Enter your name:
                 <input type="text" value={name} onChange={handleChange}/>
             </label>
+            <p>Current Value:{name}</p>
         </form>
     )
 }
