@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Welcome from React</h1>
+      <h1 className="text-purple-700">Welcome from React</h1>
       <Counter />  
       <MyButton />  
       <Car />
