@@ -13,12 +13,12 @@ import { MissedGoal } from './App.jsx'
 import { MadeGoal } from './App.jsx'
 import { Goal } from './App.jsx'
 import MyForm from './components/Form.jsx'
+import Todo from './components/Todo.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     
-    <MyForm />
-    <App />
+   <Todo />
     
   </StrictMode>,
 )
