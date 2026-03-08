@@ -1,43 +1,35 @@
-import { useState } from "react"
-import { createRoot } from "react-dom/client"
+import { useState } from 'react';
+import { createRoot } from 'react-dom/client';
 
+function MyForm() {
+  const [inputs, setInputs] = useState({});
 
-export default function MyForm(){
-    const [name, setName] = useState("John Doe")
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setInputs(values => ({...values, [name]: value}))
+  }
 
-    function handleChange(e){
-        setName(e.target.value)
-    }
-
-    function handleSubmit(e){
-        e.preventDefault()
-        alert(name)
-    }
-
-    const [myCar, setMyCar] = useState("Volvo");
-
-    const handleChanges = (event) => {
-        setMyCar(event.target.value)
-    }
-
-    return (
-        <>
-        <form onSubmit={handleSubmit}>
-            <label> Enter your name:
-                <input type="text" value={name} onChange={handleChange}/>
-            </label>
-            <p>Current Value:{name}</p>
-            <label>
-                <input type="submit" />
-            </label>
-        </form>
-        <form>
-            <select value={myCar} onChange={handleChanges}>
-                <option value="Ford">Ford</option>
-                <option value="Volvo">Volvo</option>
-                <option value="Fiat">Fiat</option>
-            </select>
-        </form>
-        </>
-    )
+  return (
+    <form><label>First name:<input
+        type="text"
+        name="firstname"
+        value={inputs.firstname}
+        onChange={handleChange}
+      />
+      </label>
+      <label>Last name:<input
+          type="text"
+          name="lastname"
+          value={inputs.lastname}
+          onChange={handleChange}
+        />
+        </label>
+            <p>Current values:{inputs.firstname}{inputs.lastname}</p>
+    </form>
+  )
 }
+
+createRoot(document.getElementById('root')).render(
+  <MyForm />
+);
