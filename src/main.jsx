@@ -17,9 +17,9 @@ import Todo from './components/Todo.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <MyForm />
+    {/* <MyForm /> */}
     
-   {/* <Todo /> */}
+   <Todo />
     
   </StrictMode>,
 )
