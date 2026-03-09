@@ -26,7 +26,7 @@ function MyForm() {
           onChange={handleChange}
         />
         </label>
-            <p>Current values:{inputs.firstname}{inputs.lastname}</p>
+            <p>Current values:{inputs.firstname} {inputs.lastname}</p>
     </form>
   )
 }
