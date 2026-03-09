@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { createRoot } from 'react-dom/client';
 
 function MyForm() {
   const [inputs, setInputs] = useState({});
@@ -11,7 +10,9 @@ function MyForm() {
   }
 
   return (
-    <form><label>First name:<input
+    <form>
+      <label>First name:
+        <input
         type="text"
         name="firstname"
         value={inputs.firstname}
@@ -30,6 +31,4 @@ function MyForm() {
   )
 }
 
-createRoot(document.getElementById('root')).render(
-  <MyForm />
-);
+export default MyForm;
