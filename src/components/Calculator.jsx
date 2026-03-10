@@ -1,1 +1,3 @@
-export  default Calculator
+export  default function Calculator(){
+
+}
