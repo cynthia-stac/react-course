@@ -22,5 +22,6 @@ createRoot(document.getElementById('root')).render(
     
    {/* <Todo /> */}
     
+    <Calculator />
   </StrictMode>,
 )
