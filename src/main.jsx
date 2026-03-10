@@ -14,6 +14,7 @@ import { MadeGoal } from './App.jsx'
 import { Goal } from './App.jsx'
 import MyForm from './components/Form.jsx'
 import Todo from './components/Todo.jsx'
+import Calculator from './components/Calculator.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
