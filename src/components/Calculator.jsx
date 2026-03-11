@@ -4,17 +4,18 @@ import { useState } from "react";
 function Button(){
 
     const buttons = ['AC', '+/-','%','/','7','8','9','X','4','5','6','-','1','2','3','+','0','.','=']
+    const signs = ['/','X','-','+']
     let btn = buttons.map((v, idx) => 
         <div key={idx} className={`${v === '0' ? 'col-span-2' : ''}`}>
-            <button className="bg-white w-full h-full rounded-md">
+            <button className={` w-full h-full font-bold text-lg ${signs.includes(v) || v === '=' ? 'bg-[#F38636]' :'bg-white'}`}>
                 {v}
             </button>
         </div>
     )
     return (
-        <div className="bg-gray-800 mt-12 pt-16 rounded-lg">
-        <p className="w-full">0</p>
-        <div className="grid gap-[7px] grid-cols-4 rounded-md p-3 h-96 w-80 bg-gray-800">
+        <div className="bg-[#7A7B88] mt-10 ">
+        <p className="flex items-center text-white justify-end text-4xl h-14">0</p>
+        <div className="grid gap-[1px] grid-cols-4 p-[1px] h-96 w-80">
             {btn}
         </div>
         </div>
