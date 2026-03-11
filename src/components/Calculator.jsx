@@ -5,6 +5,11 @@ function Button(){
 
     const buttons = ['AC', '+/-','%','/','7','8','9','X','4','5','6','-','1','2','3','+','0','.','=']
     const signs = ['/','X','-','+']
+
+
+    const[dispaly, setDispaly] = useState('0')
+
+
     let btn = buttons.map((v, idx) => 
         <div key={idx} className={`${v === '0' ? 'col-span-2' : ''}`}>
             <button className={` w-full h-full font-bold text-lg ${signs.includes(v) || v === '=' ? 'bg-[#F38636]' :'bg-white'}`}>
