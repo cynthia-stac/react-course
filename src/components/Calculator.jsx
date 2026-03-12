@@ -19,7 +19,7 @@ function Button(){
     )
 
     function handleClick(value){
-
+        setDisplay(value)
     }
 
 
