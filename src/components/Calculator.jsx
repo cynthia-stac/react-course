@@ -12,7 +12,7 @@ function Button(){
 
     let btn = buttons.map((v, idx) => 
         <div key={idx} className={`${v === '0' ? 'col-span-2' : ''}`}>
-            <button className={` w-full h-full font-bold text-lg ${signs.includes(v) || v === '=' ? 'bg-[#F38636]' :'bg-white'}`}>
+            <button onClick={() => handleClick(v)} className={` w-full h-full font-bold text-lg ${signs.includes(v) || v === '=' ? 'bg-[#F38636]' :'bg-white'}`}>
                 {v}
             </button>
         </div>
