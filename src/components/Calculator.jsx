@@ -19,10 +19,12 @@ function Button(){
     )
     return (
         <div className="bg-[#7A7B88] mt-10 ">
-        <p className="flex items-center text-white justify-end text-4xl h-14">0</p>
-        <div className="grid gap-[1px] grid-cols-4 p-[1px] h-96 w-80">
-            {btn}
-        </div>
+            <p className="flex items-center text-white justify-end text-4xl h-14">
+                {display}
+            </p>
+            <div className="grid gap-[1px] grid-cols-4 p-[1px] h-96 w-80">
+                {btn}
+            </div>
         </div>
     )
     
