@@ -18,8 +18,8 @@ function Button(){
         </div>
     )
 
-    function handleClick(){
-        
+    function handleClick(value){
+
     }
 
 
