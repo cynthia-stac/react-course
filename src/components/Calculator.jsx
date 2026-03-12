@@ -7,7 +7,7 @@ function Button(){
     const signs = ['/','X','-','+']
 
 
-    const[dispaly, setDispaly] = useState('0')
+    const[display, setDisplay] = useState('0')
 
 
     let btn = buttons.map((v, idx) => 
