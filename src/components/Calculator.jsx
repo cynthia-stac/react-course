@@ -17,6 +17,10 @@ function Button(){
             </button>
         </div>
     )
+
+    function 
+
+
     return (
         <div className="bg-[#7A7B88] mt-10 ">
             <p className="flex items-center text-white justify-end text-4xl h-14">
