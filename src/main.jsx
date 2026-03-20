@@ -20,6 +20,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <MyForm /> */}
     
-    <Calculator />
+    {/* <Calculator /> */}
   </StrictMode>,
 )
