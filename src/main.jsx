@@ -21,5 +21,7 @@ createRoot(document.getElementById('root')).render(
     {/* <MyForm /> */}
     
     {/* <Calculator /> */}
+
+    <Router />
   </StrictMode>,
 )
