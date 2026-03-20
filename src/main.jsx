@@ -15,6 +15,7 @@ import { Goal } from './App.jsx'
 import MyForm from './components/Form.jsx'
 import Todo from './components/Todo.jsx'
 import Calculator from './components/Calculator.jsx'
+import MyRouter from './components/MyRouter.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,6 +23,6 @@ createRoot(document.getElementById('root')).render(
     
     {/* <Calculator /> */}
 
-    <Router />
+  <MyRouter />
   </StrictMode>,
 )
