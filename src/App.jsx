@@ -149,6 +149,6 @@
 
 export default function App() {
   return (
-    <h1>Hello world!</h1>
+    <h1 className="text-9xl font-semibold text-indigo-700 font-serif">Hello world!</h1>
   )
 }
