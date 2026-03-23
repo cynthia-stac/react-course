@@ -146,8 +146,18 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
 // import { BrowserRouter } from "react-router-dom"
-
 export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export function Home() {
   return (
     <h1 className="text-9xl font-semibold text-indigo-700 font-serif">❤️Jesus is my Maker and my King!❤️</h1>
   )
