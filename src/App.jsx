@@ -152,3 +152,10 @@ export default function App() {
     <h1 className="text-9xl font-semibold text-indigo-700 font-serif">❤️Jesus is my Maker and my King!❤️</h1>
   )
 }
+
+
+export function About(){
+  return (
+    <h1 className="text-9xl font-semibold text-indigo-700 font-serif">About page goes here🎉🎉🎉🎉!</h1>
+  )
+}
