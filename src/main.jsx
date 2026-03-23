@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 // import './index.css'
 import App from './App.jsx'
 import {About} from './App.jsx'
+import { Home } from './App.jsx'
 // import {MyButton} from './App.jsx'
 // import {Counter} from './App.jsx'
 // import {Car} from './App.jsx'
@@ -20,14 +21,7 @@ import {About} from './App.jsx'
 // import MyRouter from './components/MyRouter.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-     {/* <MyRouter /> */}
-     <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="about" element={<About />} />
-        </Routes>
-     </BrowserRouter>
-   
-  </StrictMode>,
+
+  <App />
+
 );
