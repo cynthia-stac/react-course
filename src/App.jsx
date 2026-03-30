@@ -1,4 +1,7 @@
 // import { useState } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { createPortal } from 'react-dom';
+
 
 // export default function App() {
 
@@ -170,6 +173,14 @@ export function Home() {
 
 export function About(){
   return (
-    <h1 className="text-9xl font-semibold text-indigo-700 font-serif">About page goes here🎉🎉🎉🎉!</h1>
-  )
+    <div>
+      <h1 className="text-9xl font-semibold text-indigo-700 font-serif">About page goes here🎉🎉🎉🎉!</h1>
+      {/* <div>
+        Welcome
+      </div>,
+      document.body */}
+    </div> 
+    
+  );
 }
+  
