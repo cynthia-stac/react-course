@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import {lazy, Suspense} from "react"
 import { createPortal } from 'react-dom';
 
 
