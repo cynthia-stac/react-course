@@ -1,27 +1,9 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-// import './index.css'
-import App from './App.jsx'
-import {About} from './App.jsx'
-import { Home } from './App.jsx'
-// import {MyButton} from './App.jsx'
-// import {Counter} from './App.jsx'
-// import {Car} from './App.jsx'
-// import {Fruit} from './App.jsx'
-// import {Son} from './App.jsx'
-// import { Daughter } from './App.jsx'
-// import { Parent } from './App.jsx'
-// import { MissedGoal } from './App.jsx'
-// import { MadeGoal } from './App.jsx'
-// import { Goal } from './App.jsx'
-// import MyForm from './components/Form.jsx'
-// import Todo from './components/Todo.jsx'
-// import Calculator from './components/Calculator.jsx'
-// import MyRouter from './components/MyRouter.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-createRoot(document.getElementById('root')).render(
-
-  <App />
-
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
