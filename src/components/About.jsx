@@ -1,7 +1,23 @@
+import { useState, useEffect } from "react";
+
 export default function About() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1000); // 1s loading every time
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen text-2xl font-bold">
+        Loading About... ⏳
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-6">
-      
       <h1 className="text-4xl md:text-6xl font-bold mb-6 text-pink-400">
         About This App 🎉
       </h1>
@@ -16,7 +32,6 @@ export default function About() {
           🚀 Fast | 🎨 Beautiful | ⚡ Optimized
         </p>
       </div>
-
     </div>
   );
 }
